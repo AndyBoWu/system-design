@@ -1,0 +1,53 @@
+# General OS or Editor specific files (apply to the whole repo)
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# --- Ignores specific to the 'api-testing' Node.js project ---
+# Prepend 'api-testing/' to paths relative to the api-testing directory
+
+# Dependency directory for 'api-testing'
+api-testing/node_modules/
+
+# Logs generated within 'api-testing'
+api-testing/logs/
+api-testing/*.log
+api-testing/npm-debug.log*
+api-testing/yarn-debug.log*
+api-testing/yarn-error.log*
+api-testing/lerna-debug.log*
+
+# Coverage directory for 'api-testing'
+api-testing/coverage/
+api-testing/.nyc_output/
+
+# Build output for 'api-testing' (if any)
+# api-testing/dist/
+# api-testing/build/
+
+# Environment variables files within 'api-testing'
+api-testing/.env
+api-testing/.env.test
+api-testing/.env.production
+api-testing/.env.*
+!api-testing/.env.example
+
+# Optional npm cache directory within 'api-testing'
+api-testing/.npm
+
+# Optional eslint cache within 'api-testing'
+api-testing/.eslintcache
+
+# Output of 'npm pack' from 'api-testing'
+api-testing/*.tgz
+
+# Other common Node project files if they are generated inside api-testing
+# api-testing/.node_repl_history
+# api-testing/pids/
+# api-testing/*.pid
+# api-testing/*.seed
+# api-testing/*.pid.lock
